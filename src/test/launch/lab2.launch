@@ -1,0 +1,11 @@
+
+<launch>
+  <!-- <node name="lab_node" pkg="test"  type="lab.py" output="screen" /> -->
+  <node name="talker_node" pkg="test"  type="lab2.py" output="screen"/>
+  <node name="listener_node" pkg="test"  type="lab2sub.py" output="screen"/>
+  <node name="arduino_node" pkg="rosserial_python"  type="serial_node.py"  >
+    <param name="port" value="/dev/ttyACM0"/> 
+    <!-- <param name="baud" value="57600"/> -->
+  </node>
+
+</launch>

@@ -1,0 +1,11 @@
+<!-- <launch>
+    <node name="publisher_node" pkg="test" type="test_publisher" output="screen" />
+    <node name="subscriber_node" pkg="test" type="test_subscriber" output="screen" />
+</launch> -->
+<launch>
+  <!-- <node name="lab_node" pkg="test"  type="lab.py" output="screen" /> -->
+  <node name="talker_node" pkg="test"  type="talker.py" output="screen"/>
+  <node name="listener_node" pkg="test"  type="listener.py" output="screen"/>
+  <node name="arduino_node" pkg="rosserial_python"  type="serial_node.py" args="/dev/ttyACM0"/>
+
+</launch>

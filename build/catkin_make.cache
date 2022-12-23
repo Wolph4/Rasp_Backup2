@@ -1,0 +1,2 @@
+check2:check3:rosserial_arduino:test:test_pkg
+-DCATKIN_DEVEL_PREFIX=/home/test/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/test/catkin_ws/install -G Unix Makefiles

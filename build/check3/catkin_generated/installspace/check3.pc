@@ -1,0 +1,8 @@
+prefix=/home/test/catkin_ws/install
+
+Name: check3
+Description: Description of check3
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
